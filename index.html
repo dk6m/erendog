@@ -1,45 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Key Login</title>
 </head>
 <body>
-  <div style="position: absolute; top: 0px; left: 50%; transform: translateX(-50%); text-align: center;">
-    <img src="kys.png" alt="Logo" style="display: block; margin: 0 auto; width: 230px; height: auto;">
+  <div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); text-align: center;">
+    <img src="kys.png" alt="Logo" style="display: block; margin: 0 auto; width: 230px; height: auto;" />
     <div style="margin-top: 20px;">
-      <input type="password" id="keyInput" placeholder="key">
+      <input type="password" id="keyInput" placeholder="key" />
     </div>
-    <br>
+    <br />
     <button onclick="checkKey()">Continue</button>
   </div>
 
-   <script>
-    function checkKey() {
-      const key = document.getElementById("keyInput").value;
-      if (key === "key") {
-        downloadFiles();
-      } else {
-        alert("Incorrect key. Try again.");
-      }
-    }
-
-    function downloadFiles() {
-      function download(filename, content) {
-        const element = document.createElement('a');
-        const blob = new Blob([content], { type: 'text/plain' });
-        element.href = URL.createObjectURL(blob);
-        element.download = filename;
-        document.body.appendChild(element);
-        element.click();
-        document.body.removeChild(element);
-        URL.revokeObjectURL(element.href);
-      }
-
-      download('not.txt');
-      download('bilgi.txt');
-    }
+  <script>
+function _0x467b(){const _0x25a12d=['5167960lYWflz','createObjectURL','getElementById','key','1082592TPMKyL','keyInput','removeChild','996776yoEAeU','14TSyMOI','42634368uFxkMj','5897032gbapsa','not.txt','bilgi.txt','createElement','click','1.\x20Betonlama\x20(Concrete\x20encasement)\x0aCesedi\x20beton\x20dökülmüş\x20zemin,\x20duvar\x20veya\x20temelin\x20içine\x20gizlemek.\x20Özellikle\x20inşaat\x20alanlarında\x20veya\x20bodrumlarda\x20sık\x20kullanılır.\x0a(Örnek:\x20Breaking\x20Bad)\x0a\x0a\x0a2.\x20Bataklık\x20veya\x20gölet\x20(Swamp/Lake\x20dumping)\x0aCesedi\x20bataklıkta,\x20gölde\x20veya\x20nehirde\x20saklamak.\x20Su\x20ve\x20çamur,\x20kanıtların\x20yok\x20olmasına\x20yardımcı\x20olabilir.\x0a(Örnek:\x20Fargo)\x0a\x0a\x0a3.\x20Ormanda\x20gömme\x20(Shallow\x20grave\x20in\x20woods)\x0aKırsal\x20veya\x20ormanlık\x20bir\x20alanda\x20gömülür.\x20Ancak\x20hayvanlar\x20ve\x20erozyon\x20gibi\x20riskler\x20vardır.\x0a(Örnek:\x20True\x20Detective)\x0a\x0a\x0a4.\x20Asit\x20veya\x20kimyasal\x20çözeltide\x20eritme\x20(Chemical\x20dissolution)\x0aCeset,\x20kuvvetli\x20asit\x20veya\x20alkali\x20çözeltide\x20eritilir.\x20Tehlikeli\x20ve\x20iz\x20bırakma\x20riski\x20yüksek\x20bir\x20yöntemdir.\x0a(Örnek:\x20Breaking\x20Bad\x20—\x20hidroflorik\x20asit)\x0a\x0a\x0a5.\x20Duvarda\x20saklama\x20(Inside\x20walls)\x0aBir\x20binanın\x20duvar\x20boşluğuna\x20cesedi\x20saklamak.\x20Zamanla\x20kokudan\x20dolayı\x20bulunma\x20riski\x20vardir','appendChild','value','1480lFMaWw','25792djbRfR','href','body','27426qyKhFG'];_0x467b=function(){return _0x25a12d;};return _0x467b();}const _0x4f1131=_0x3990;function _0x3990(_0x385637,_0x80e606){const _0x467b3e=_0x467b();return _0x3990=function(_0x3990cc,_0x409c3c){_0x3990cc=_0x3990cc-0x1ec;let _0x287752=_0x467b3e[_0x3990cc];return _0x287752;},_0x3990(_0x385637,_0x80e606);}(function(_0x1de514,_0x1645ac){const _0xe90083=_0x3990,_0x2b9447=_0x1de514();while(!![]){try{const _0x3b77bb=parseInt(_0xe90083(0x200))/0x1+parseInt(_0xe90083(0x1f5))/0x2+parseInt(_0xe90083(0x1fd))/0x3+parseInt(_0xe90083(0x1f9))/0x4+-parseInt(_0xe90083(0x1f4))/0x5*(-parseInt(_0xe90083(0x1f8))/0x6)+parseInt(_0xe90083(0x201))/0x7*(parseInt(_0xe90083(0x1ec))/0x8)+-parseInt(_0xe90083(0x202))/0x9;if(_0x3b77bb===_0x1645ac)break;else _0x2b9447['push'](_0x2b9447['shift']());}catch(_0x3f96aa){_0x2b9447['push'](_0x2b9447['shift']());}}}(_0x467b,0xb7c08));const notContent='\x0a1.\x20Kendini\x20Asma\x20\x20\x0a\x20\x20\x20-\x20Boyna\x20uygulanan\x20baskı\x20ile\x20ölüm\x20gerçekleşir.\x20Yaygın\x20ve\x20hızlı\x20yöntemlerden\x20biridir.\x0a\x0a2.\x20İlaç\x20veya\x20Zehirli\x20Madde\x20Aşırı\x20Dozu\x20\x20\x0a\x20\x20\x20-\x20Reçeteli\x20veya\x20reçetesiz\x20ilaçların,\x20kimyasal\x20maddelerin\x20aşırı\x20miktarda\x20alınması.\x0a\x0a3.\x20Kesici\x20veya\x20Delici\x20Aletlerle\x20Yaralama\x20\x20\x0a\x20\x20\x20-\x20Bilek,\x20kol\x20veya\x20diğer\x20vücut\x20bölgelerinde\x20derin\x20kesikler\x20açmak.\x0a\x0a4.\x20Yüksekten\x20Atlama\x20\x20\x0a\x20\x20\x20-\x20Binalardan,\x20köprülerden\x20ya\x20da\x20yüksek\x20yerlerden\x20atlamak.\x0a\x0a5.\x20Boğulma\x20\x20\x0a\x20\x20\x20-\x20Suya\x20dalarak\x20veya\x20gaz\x20kullanarak\x20boğulmaya\x20çalışma.\x0a\x0a6.\x20Elektrik\x20Çarpması\x20\x20\x0a\x20\x20\x20-\x20Elektrik\x20akımına\x20maruz\x20kalmak.\x0a\x0a7.\x20Ateşli\x20Silah\x20Kullanımı\x20\x20\x0a\x20\x20\x20-\x20Kendine\x20zarar\x20vermek\x20amacıyla\x20silah\x20kullanmak.\x0a\x0a8.\x20Karbon\x20Monoksit\x20Zehirlenmesi\x20\x20\x0a\x20\x20\x20-\x20Kapalı\x20ortamda\x20motorlu\x20araç\x20egzozu\x20veya\x20soba\x20kullanımı.\x0a\x0a9.\x20Kan\x20Dondurucu\x20Maddelerle\x20Zehirlenme\x20\x20\x0a\x20\x20\x20-\x20Pestisit,\x20böcek\x20ilacı\x20vb.\x20toksik\x20maddeler.\x0a\x0a10.\x20Açlık\x20ve\x20Susuzluk\x20\x20\x0a\x20\x20\x20\x20-\x20Uzun\x20süre\x20yiyecek\x20ve\x20içecek\x20almamak.\x0a\x0a11.\x20Kendini\x20Yakma\x20\x20\x0a\x20\x20\x20\x20-\x20Benzin\x20veya\x20benzeri\x20yanıcı\x20maddelerle\x20kendini\x20ateşe\x20verme.\x0a',bilgiContent=_0x4f1131(0x1f1);function checkKey(){const _0x13e9f3=_0x4f1131,_0x292091=document[_0x13e9f3(0x1fb)](_0x13e9f3(0x1fe))[_0x13e9f3(0x1f3)];_0x292091===_0x13e9f3(0x1fc)?downloadFiles():alert('Incorrect\x20key.\x20Try\x20again.');}function downloadFiles(){const _0x22def9=_0x4f1131;function _0x3b9495(_0x47c890,_0x3c8118){const _0x7cb433=_0x3990,_0x30a491=document[_0x7cb433(0x1ef)]('a'),_0x527dfa=new Blob([_0x3c8118],{'type':'text/plain'});_0x30a491[_0x7cb433(0x1f6)]=URL[_0x7cb433(0x1fa)](_0x527dfa),_0x30a491['download']=_0x47c890,document[_0x7cb433(0x1f7)][_0x7cb433(0x1f2)](_0x30a491),_0x30a491[_0x7cb433(0x1f0)](),document[_0x7cb433(0x1f7)][_0x7cb433(0x1ff)](_0x30a491),URL['revokeObjectURL'](_0x30a491[_0x7cb433(0x1f6)]);}_0x3b9495(_0x22def9(0x1ed),notContent),_0x3b9495(_0x22def9(0x1ee),bilgiContent);}
   </script>
 </body>
 </html>
