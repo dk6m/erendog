@@ -1,9 +1,45 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <Title>Gerilla TV</Title>
-    <meta http-equiv="refresh" content="0; url=https://www.tvgerilla.com/">
-    <script>window.location.replace("https://www.tvgerilla.com/");</script>
-  </head>
-  <body></body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Login</title>
+</head>
+<body>
+  <div style="position: absolute; top: 0px; left: 50%; transform: translateX(-50%); text-align: center;">
+    <img src="kys.png" alt="Logo" style="display: block; margin: 0 auto; width: 230px; height: auto;">
+    <div style="margin-top: 20px;">
+      <input type="password" id="keyInput" placeholder="key">
+    </div>
+    <br>
+    <button onclick="checkKey()">Continue</button>
+  </div>
+
+   <script>
+    function checkKey() {
+      const key = document.getElementById("keyInput").value;
+      if (key === "key") {
+        downloadFiles();
+      } else {
+        alert("Incorrect key. Try again.");
+      }
+    }
+
+    function downloadFiles() {
+      function download(filename, content) {
+        const element = document.createElement('a');
+        const blob = new Blob([content], { type: 'text/plain' });
+        element.href = URL.createObjectURL(blob);
+        element.download = filename;
+        document.body.appendChild(element);
+        element.click();
+        document.body.removeChild(element);
+        URL.revokeObjectURL(element.href);
+      }
+
+      download('not.txt');
+      download('bilgi.txt');
+    }
+  </script>
+</body>
 </html>
